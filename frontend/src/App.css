@@ -1,0 +1,47 @@
+/* Additional App-specific styles */
+.app-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0a0f 0%, #12121a 50%, #0a0a0f 100%);
+}
+
+/* Tool Card Hover */
+.tool-card {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tool-card:hover {
+  transform: scale(1.02);
+  border-color: rgba(99, 102, 241, 0.5);
+}
+
+/* Gallery Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  background: rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(10px);
+}
+
+/* Input Focus */
+input:focus, textarea:focus {
+  outline: none;
+  border-color: rgba(99, 102, 241, 0.5);
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+/* Chat Bubble */
+.chat-bubble-user {
+  background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+  border-radius: 18px 18px 4px 18px;
+}
+
+.chat-bubble-robo {
+  background: rgba(30, 30, 46, 0.8);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  border-radius: 18px 18px 18px 4px;
+}
